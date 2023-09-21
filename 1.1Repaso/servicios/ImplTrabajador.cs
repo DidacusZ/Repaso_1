@@ -38,7 +38,7 @@ namespace _1._1Repaso.servicios
                 sw.WriteLine(lista[i].ToString());
             }
 
-            Console.WriteLine("Se ha guardado en el fichero correctamente");
+            Console.WriteLine("\n\tSe ha guardado en el fichero correctamente");
             sw.Close();
         }
 
@@ -115,7 +115,6 @@ namespace _1._1Repaso.servicios
         }
 
 
-
         //METODOS PRIVADOS
 
         //menu para modificar el empleado
@@ -134,6 +133,7 @@ namespace _1._1Repaso.servicios
             return Console.ReadKey(true).KeyChar - '0';
         }
 
+        //pide los valores para cada atributo del objeto empleado
         private void CargarEmpleadoSinID(Trabajador empl)
         {
             empl.Nombre = CapturaString("Introduce el nombre del Trabajador");

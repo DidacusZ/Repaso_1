@@ -8,6 +8,7 @@ namespace _1._1Repaso.servicios
 {
     internal class ImplMenu : InterfaceMenu
     {
+        //muestra el menu
         public int Menu()
         {
             Console.WriteLine("\n\t1. Registro empleado");

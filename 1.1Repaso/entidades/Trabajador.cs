@@ -8,10 +8,7 @@ namespace _1._1Repaso.entidades
 {
     internal class Trabajador
     {
-        // nombre, apellidos, DNI, fecha de nacimiento,
-        //titulación más alta, Nº de la seguridad social y Nº de cuenta.
-
-
+        //atributos
         int id;
         string nombre;
         string apellidos;
@@ -24,9 +21,10 @@ namespace _1._1Repaso.entidades
         //constructor vacio
         public Trabajador()
         {
-
         }
 
+
+        /*
         //constructor lleno
         public Trabajador(int id, string nombre, string apellidos, string dni, string fechaNacimiento, string titulacionMasAlta, int nSS, string nCuenta)
         {
@@ -39,9 +37,11 @@ namespace _1._1Repaso.entidades
             this.nSS = nSS;
             this.nCuenta = nCuenta;
         }
+        */
+
 
         //getters y setters
-        public int Id { get => id; set => id = value; }
+        public int Id { /*get => id;*/ set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellidos { get => apellidos; set => apellidos = value; }
         public string Dni { get => dni; set => dni = value; }
