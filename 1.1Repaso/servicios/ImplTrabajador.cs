@@ -10,36 +10,22 @@ namespace _1._1Repaso.servicios
     internal class ImplTrabajador : InterfaceTrabajador
     {
         public List<Trabajador> addEmpleado(List<Trabajador> lista)
-        {
-            //datos de prueba
-            Trabajador empl1 = new Trabajador(1,"pepe", "botella", "12512521s", "02-04-2032", "bachiller", 2134532145, "ES24151241234234");
-            Trabajador empl2 = new Trabajador(2,"jose", "botella", "12512521s", "02-04-2032", "bachiller", 2134532145, "ES24151241234234");
-            Trabajador empl3 = new Trabajador(3,"radfa", "botella", "12512521s", "02-04-2032", "bachiller", 2134532145, "ES24151241234234");
-                   
-            lista.Add(empl1);
-            lista.Add(empl2);
-            lista.Add(empl3);
-
-            /*
-            
+        {            
             Trabajador empleado = new Trabajador();
 
-            //pedimos todos los campos del empleado
-            
+            //pedimos todos los campos del empleado            
             empleado.Id = lista.Count+1;
             CargarEmpleadoSinID(empleado);
             
             //añadimos empleado a la lista
             lista.Add(empleado);
 
-            */
-
             return lista;
         }
 
         public void ExportarFichero(List<Trabajador> lista)
         {
-            //crea txt
+            //crea txt si ya existe lo destruye y crea uno nuevo
             StreamWriter sw = File.CreateText("Empleados.txt");
 
             //cabecera
@@ -48,10 +34,11 @@ namespace _1._1Repaso.servicios
             //imprime la lista
             for (int i = 0; i < lista.Count; i++)
             {
-                Console.WriteLine(lista[i].ToString());
+                Console.WriteLine("\n\t"+lista[i].ToString());
                 sw.WriteLine(lista[i].ToString());
             }
 
+            Console.WriteLine("Se ha guardado en el fichero correctamente");
             sw.Close();
         }
 
@@ -126,6 +113,7 @@ namespace _1._1Repaso.servicios
 
             return lista;
         }
+
 
 
         //METODOS PRIVADOS

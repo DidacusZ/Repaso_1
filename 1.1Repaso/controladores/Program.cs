@@ -20,7 +20,18 @@ namespace _1._1Repaso.controladores
                 //lista
                 List<Trabajador> listaEpleados = new List<Trabajador>();
 
+                /*
                 
+                //datos de prueba
+                Trabajador empl1 = new Trabajador(1, "pepe", "botella", "12512521s", "02-04-2032", "bachiller", 2134532145, "ES24151241234234");
+                Trabajador empl2 = new Trabajador(2, "jose", "botella", "12512521s", "02-04-2032", "bachiller", 2134532145, "ES24151241234234");
+                Trabajador empl3 = new Trabajador(3, "radfa", "botella", "12512521s", "02-04-2032", "bachiller", 2134532145, "ES24151241234234");
+
+                listaEpleados.Add(empl1);
+                listaEpleados.Add(empl2);
+                listaEpleados.Add(empl3);
+
+                */
 
                 do
                 {
